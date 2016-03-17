@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, maximum-scale-1.0, minimum-scale=1.0, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/themes/my-custom-theme.min.css"> 
+    <link rel="stylesheet" href="assets/themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Artists in History :: Mobile Site</title>
+    <link rel="stylesheet" href="assets/mobile-styles.css"> 
+  </head>
+  <body>  
+    <section data-role="page" id="page1">
+      <header>
+        <h1>Title of First Page</h1>
+      </header>
+      <article>
+        <h2>Content of first page</h2>
+      </article>
+      <ul data-role="listview">
+        <li><a href="#page2" data-transition="slidefade">Page 2</a></li>
+        <li><a href="#page3" data-transition="slidefade">Page 3</a></li>
+      </ul>
+      <footer>
+        <h4>Footer</h4>
+      </footer>
+    </section>
+    <section data-role="page" id="page2">
+      <header>
+        <h2>Second Header</h2>
+      </header>
+      <article>
+        <h2>Content of second page</h2>
+      </article>
+      <footer>
+        <h4>Footer</h4>
+        <p><a href="#page1" data-transition="slidefade" data-back="true">Home</a></p>
+      </footer>
+    </section>
+    <section data-role="page" id="page3">
+      <header>
+        <h2>Third Header</h2>
+      </header>
+      <article>
+        <h2>Content of third page</h2>
+      </article>
+      <footer>
+        <h4>Footer</h4>
+        <p><a href="#page1" data-transition="slidefade" data-back="true">Home</a></p>
+      </footer>
+    </section>
+  </body>
+</html>
