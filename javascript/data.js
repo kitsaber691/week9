@@ -1,7 +1,9 @@
+$("document").ready(function(){
+
+  var artist_ul = document.getElementById("artist-ul");
+  var artistObj = {};
 	
-	var artistObj = {};
-	
-	artists = {
+	artistObj = {
 		artist1 : {
 			link : "http://hoist1138.com/jacques-louis-david.html",
 			img : "assets/images/artists/jacques-louis-david.png",
@@ -27,8 +29,8 @@
 		},
 		artist5 : {
 			link : "hoist1138.com/vincent-van-gogh.html",
-			img : "assets/images/artists/jacques-louis-david.png",
-			fullName : "Jacques-Louis David",
+			img : "assets/images/artists/vincent-van-gogh.png",
+			fullName : "Vincent Van Gogh",
 			years : "1853 - 1890"
 		},
 		artist6 : {
@@ -51,7 +53,7 @@
 		},
 		artist9 : {
 			link : "hoist1138.com/norman-rockwell.html",
-			img : "images/artists/norman-rockwell.png",
+			img : "assets/images/artists/norman-rockwell.png",
 			fullName : "Norman Rockwell",
 			years : "1894 - 1978"
 		},
@@ -92,4 +94,18 @@
 			years : "1748 - 1845"
 		}
 	};
-
+  function buildListItems(object){
+    var output = "";
+    for (i in object){
+      output += '<li>';
+      output += '<a href="' + artistObj[i].link + '">';
+      output += '<img src="' + artistObj[i].img + '">';
+      output += '<h3>' + artistObj[i].fullName + '</h3>';
+      output += '<h4>' + artistObj[i].years + '</h4>';
+      output += '</a>'
+      output += '</li>'
+    }
+    artist_ul.innerHTML = output;
+  }
+  buildListItems(artistObj);
+});

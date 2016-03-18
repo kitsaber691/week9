@@ -8,46 +8,24 @@
     <link rel="stylesheet" href="assets/themes/my-custom-theme.min.css"> 
     <link rel="stylesheet" href="assets/themes/jquery.mobile.icons.min.css">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" href="assets/mobile-styles.css">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="javascript/userConfigTest.js"></script>
+    <script type="text/javascript" src="javascript/data.js"></script>
     <title>Artists in History :: Mobile Site</title>
-    <link rel="stylesheet" href="assets/mobile-styles.css"> 
   </head>
-    <body>  
-      <main>
-        <header>     
-          <h1>Artists in History</h1>
-        </header>
+    <body data-role="page">  
+      <header data-role="header">     
+        <h1>Artists in History</h1>
+      </header>
+      <main data-role="content">
         <article>
-          <ul data-role="listview">
-            <li>
-              <a href="http://hoist1138.com/edward-hopper.html">
-              <img src="assets/images/artists/edward-hopper.png">
-              <h3>Edward Hopper  </h3>
-              <h4>1892 - 1967</h4>
-              </a>
-              <a href="#">info</a>
-            </li>
-            <li>
-              <a href="http://hoist1138.com/edvard-munch.html">
-              <img src="assets/images/artists/edvard-munch.png">
-              <h3>Edvard Munch</h3>
-              <h4>1863 - 1944</h4>
-              </a>
-              <a href="#">info</a>
-            </li>
-            <li>
-              <a href="http://hoist1138.com/alphonse-mucha.html">
-              <img src="assets/images/artists/alphonse-mucha.png">
-              <h3>Alphonse Mucha  </h3>
-              <h4>1860 - 1939</h4>
-              </a>
-              <a href="#">info</a>
-            </li>
+          <ul id="artist-ul" data-role="listview" data-filter="true" data-inset="true">
+            
           </ul>
         </article>
-      </main><!-- closing page -->
+      </main>
       <footer>
           <p>Footer</p>
       </footer>
